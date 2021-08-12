@@ -4,6 +4,11 @@ services:
     public: false
     autowire: true
 
+  Rinsvent\Data2DTOBundle\EventListener\RequestListener:
+    autowire: true
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, priority: 10000 }
+
   Rinsvent\Data2DTOBundle\Service\ServiceResolver:
     bind:
       $transformerLocator: !tagged_locator { tag: 'rinsvent.transformer', index_by: 'key', default_index_method: 'getLocatorKey' }

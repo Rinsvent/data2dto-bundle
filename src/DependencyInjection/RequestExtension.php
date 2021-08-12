@@ -2,6 +2,7 @@
 
 namespace Rinsvent\Data2DTOBundle\DependencyInjection;
 
+use Rinsvent\Data2DTOBundle\Service\ServiceResolver;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -13,5 +14,6 @@ class RequestExtension extends Extension
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yaml');
+        $container->get(ServiceResolver::class);
     }
 }
