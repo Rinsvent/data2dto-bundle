@@ -12,6 +12,6 @@ class Server extends Meta
         public ?string $default = null,
         public array $tags = ['request_server']
     ) {
-        parent::__construct(...func_get_args());
+        parent::__construct($tags);
     }
 }

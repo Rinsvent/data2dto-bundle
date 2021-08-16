@@ -12,6 +12,6 @@ class Header extends Meta
         public ?string $default = null,
         public array $tags = ['request_headers']
     ) {
-        parent::__construct(...func_get_args());
+        parent::__construct($tags);
     }
 }
