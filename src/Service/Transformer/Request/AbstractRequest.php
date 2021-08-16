@@ -1,7 +1,8 @@
 <?php
 
-namespace Rinsvent\Data2DTOBundle\Service;
+namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request;
 
+use Rinsvent\Data2DTOBundle\Service\AbstractTransformer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Rinsvent\Data2DTOBundle\Service;
+namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request\Headers;
 
 use Rinsvent\Data2DTO\Transformer\Meta;
 
-class UserAgentTransformer extends AbstractRequest
+class UserAgentTransformer extends HeaderTransformer
 {
     /**
      * @param UserAgent $meta
