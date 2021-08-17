@@ -13,6 +13,9 @@ services:
     bind:
       $transformerLocator: !tagged_locator { tag: 'rinsvent.transformer', index_by: 'key', default_index_method: 'getLocatorKey' }
 
+  Rinsvent\Data2DTOBundle\Service\Transformer\:
+    resource: '../../../src/Service/Transformer'
+
   _instanceof:
     Rinsvent\Data2DTOBundle\Service\AbstractTransformer:
       tags: [ 'rinsvent.transformer' ]
