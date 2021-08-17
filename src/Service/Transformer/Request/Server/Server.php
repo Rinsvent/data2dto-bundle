@@ -2,10 +2,10 @@
 
 namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request\Server;
 
-use Rinsvent\Data2DTO\Transformer\Meta;
+use Rinsvent\Data2DTOBundle\Service\Service;
 
 #[\Attribute]
-class Server extends Meta
+class Server extends Service
 {
     public function __construct(
         public string $property,

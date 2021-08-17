@@ -2,10 +2,10 @@
 
 namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request\Server;
 
-use Rinsvent\Data2DTO\Transformer\Meta;
+use Rinsvent\Data2DTOBundle\Service\Service;
 
 #[\Attribute]
-class Ip extends Meta
+class Ip extends Service
 {
 
 }

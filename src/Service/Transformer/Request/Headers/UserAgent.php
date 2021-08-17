@@ -2,10 +2,10 @@
 
 namespace Rinsvent\Data2DTOBundle\Service\Transformer\Request\Headers;
 
-use Rinsvent\Data2DTO\Transformer\Meta;
+use Rinsvent\Data2DTOBundle\Service\Service;
 
 #[\Attribute]
-class UserAgent extends Meta
+class UserAgent extends Service
 {
 
 }
