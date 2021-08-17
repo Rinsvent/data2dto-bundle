@@ -11,6 +11,6 @@ class UserAgentTransformer extends HeaderTransformer
      */
     public function transform(&$data, Meta $meta): void
     {
-        $data = $this->request->headers->get('user_agent', $meta->default);
+        $data = $this->request->headers->get('user_agent');
     }
 }
